@@ -1,0 +1,146 @@
+/* src/styles/Dashboard.css */
+.dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 20px;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 28px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .date-display {
+    font-size: 16px;
+    color: #666;
+    background-color: #f5f5f5;
+    padding: 8px 16px;
+    border-radius: 20px;
+  }
+  
+  .dashboard-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .add-habit-btn {
+    display: inline-block;
+    background-color: #4a69bd;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s;
+  }
+  
+  .add-habit-btn:hover {
+    background-color: #3c55a5;
+  }
+  
+  .filter-options {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .filter-options button {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .filter-options button.active {
+    background-color: #4a69bd;
+    color: white;
+    border-color: #4a69bd;
+  }
+  
+  .dashboard-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .habits-section {
+    grid-column: 1;
+  }
+  
+  .habit-details {
+    grid-column: 2;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+  }
+  
+  .habit-details h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 22px;
+  }
+  
+  .habit-description {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .habit-frequency {
+    font-size: 14px;
+    color: #777;
+    background-color: #eaeaea;
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .no-habits {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px dashed #ddd;
+  }
+  
+  .no-habits p {
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .start-btn {
+    display: inline-block;
+    background-color: #4a69bd;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 992px) {
+    .dashboard-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .habits-section, .habit-details {
+      grid-column: 1;
+    }
+  }
